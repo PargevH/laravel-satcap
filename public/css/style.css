@@ -1,0 +1,327 @@
+/* FORM */
+
+section.signIn .content, section.signUp .content {
+    width: 100%;
+}
+
+section.signIn .signInForms, section.signUp .signInForms {
+    width: 40%;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+section.signIn .signInTitle, section.signUp .signInTitle {
+    margin-top: 81px;
+}
+
+section.signIn .signInTitle h2, section.signUp .signInTitle h2 {
+    height: 39px;
+    /*font-family: 'Poppins-Bold';*/
+    font-size: 36px;
+    color: #e7bd74;
+}
+
+section.signIn .signInForm p, section.signIn .signUpForm p, section.signUp .signInForm p, section.signUp .signUpForm p {
+    padding-top: 21px;
+    /*font-family: 'Poppins-Light';*/
+    font-size: 21px;
+    padding-bottom: 70px;
+}
+
+section.signIn .signInForm form input, section.signIn .signInForm form span, section.signIn .signUpForm form input, section.signIn .signUpForm form span, section.signUp .signInForm form input, section.signUp .signInForm form span, section.signUp .signUpForm form input, section.signUp .signUpForm form span {
+    border-radius: unset;
+    border: unset;
+    background-color: #f1f1f1;
+    padding: 26px 28px;
+}
+
+section.signIn .signInForm form input::-webkit-input-placeholder, section.signIn .signInForm form span::-webkit-input-placeholder, section.signIn .signUpForm form input::-webkit-input-placeholder, section.signIn .signUpForm form span::-webkit-input-placeholder, section.signUp .signInForm form input::-webkit-input-placeholder, section.signUp .signInForm form span::-webkit-input-placeholder, section.signUp .signUpForm form input::-webkit-input-placeholder, section.signUp .signUpForm form span::-webkit-input-placeholder {
+    /*font-family: 'Poppins-Light';*/
+    font-size: 18px;
+    color: black;
+}
+
+section.signIn .signInForm form input, section.signIn .signInForm form span, section.signIn .signUpForm form input, section.signIn .signUpForm form span, section.signUp .signInForm form input, section.signUp .signInForm form span, section.signUp .signUpForm form input, section.signUp .signUpForm form span {
+    border-radius: unset;
+    border: unset;
+    background-color: #f1f1f1;
+    padding: 26px 28px;
+}
+
+section.signIn .signInForm form input::-webkit-input-placeholder, section.signIn .signInForm form span::-webkit-input-placeholder, section.signIn .signUpForm form input::-webkit-input-placeholder, section.signIn .signUpForm form span::-webkit-input-placeholder, section.signUp .signInForm form input::-webkit-input-placeholder, section.signUp .signInForm form span::-webkit-input-placeholder, section.signUp .signUpForm form input::-webkit-input-placeholder, section.signUp .signUpForm form span::-webkit-input-placeholder {
+    /*font-family: 'Poppins-Light';*/
+    font-size: 18px;
+    color: black;
+}
+
+section.signIn .signInForm .checkboxRemember, section.signIn .signUpForm .checkboxRemember, section.signUp .signInForm .checkboxRemember, section.signUp .signUpForm .checkboxRemember {
+    margin-bottom: 48px;
+}
+
+section.signIn .signInForm .checkboxRemember .checkContainer, section.signIn .signUpForm .checkboxRemember .checkContainer, section.signUp .signInForm .checkboxRemember .checkContainer, section.signUp .signUpForm .checkboxRemember .checkContainer {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 30px 0 45px 0;
+    color: #b4b2b2;
+    /*font-family: 'Poppins-Regular';*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+section.signIn .signInForm .checkboxRemember .checkContainer input, section.signIn .signUpForm .checkboxRemember .checkContainer input, section.signUp .signInForm .checkboxRemember .checkContainer input, section.signUp .signUpForm .checkboxRemember .checkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+section.signIn .signInForm .checkboxRemember .checkmark, section.signIn .signUpForm .checkboxRemember .checkmark, section.signUp .signInForm .checkboxRemember .checkmark, section.signUp .signUpForm .checkboxRemember .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    padding: unset;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid #B4B4B4;
+}
+
+section.signIn .signInForm .checkboxRemember .checkContainer:hover input ~ .checkmark, section.signIn .signUpForm .checkboxRemember .checkContainer:hover input ~ .checkmark, section.signUp .signInForm .checkboxRemember .checkContainer:hover input ~ .checkmark, section.signUp .signUpForm .checkboxRemember .checkContainer:hover input ~ .checkmark {
+    background-color: white;
+}
+
+section.signIn .signInForm .checkboxRemember .checkContainer input:checked ~ .checkmark, section.signIn .signUpForm .checkboxRemember .checkContainer input:checked ~ .checkmark, section.signUp .signInForm .checkboxRemember .checkContainer input:checked ~ .checkmark, section.signUp .signUpForm .checkboxRemember .checkContainer input:checked ~ .checkmark {
+    background-color: #ffffff;
+    border: 1px solid #222544;
+}
+
+section.signIn .signInForm .checkboxRemember .checkContainer input[value='fixed']:checked ~ #fixed, section.signIn .signUpForm .checkboxRemember .checkContainer input[value='fixed']:checked ~ #fixed, section.signUp .signInForm .checkboxRemember .checkContainer input[value='fixed']:checked ~ #fixed, section.signUp .signUpForm .checkboxRemember .checkContainer input[value='fixed']:checked ~ #fixed {
+    display: block;
+}
+
+section.signIn .signInForm .checkboxRemember .checkContainer input[value='hourly']:checked ~ #hourly, section.signIn .signUpForm .checkboxRemember .checkContainer input[value='hourly']:checked ~ #hourly, section.signUp .signInForm .checkboxRemember .checkContainer input[value='hourly']:checked ~ #hourly, section.signUp .signUpForm .checkboxRemember .checkContainer input[value='hourly']:checked ~ #hourly {
+    display: block;
+}
+
+section.signIn .signInForm .checkboxRemember .checkmark:after, section.signIn .signUpForm .checkboxRemember .checkmark:after, section.signUp .signInForm .checkboxRemember .checkmark:after, section.signUp .signUpForm .checkboxRemember .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+section.signIn .signInForm .checkboxRemember .checkContainer input:checked ~ .checkmark:after, section.signIn .signUpForm .checkboxRemember .checkContainer input:checked ~ .checkmark:after, section.signUp .signInForm .checkboxRemember .checkContainer input:checked ~ .checkmark:after, section.signUp .signUpForm .checkboxRemember .checkContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+section.signIn .signInForm .checkboxRemember .checkContainer .checkmark:after, section.signIn .signUpForm .checkboxRemember .checkContainer .checkmark:after, section.signUp .signInForm .checkboxRemember .checkContainer .checkmark:after, section.signUp .signUpForm .checkboxRemember .checkContainer .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #222544;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+section.signIn .signInForm .login, section.signIn .signUpForm .login, section.signUp .signInForm .login, section.signUp .signUpForm .login {
+    display: block;
+    width: 100%;
+    background: #e7bd74;
+    color: #000;
+    font-size: 25px;
+    /*font-family: 'Poppins-Bold';*/
+    border-radius: unset;
+    border: unset;
+}
+
+section.signIn .signInForm .forgotPassword, section.signIn .signUpForm .forgotPassword, section.signUp .signInForm .forgotPassword, section.signUp .signUpForm .forgotPassword {
+    color: #b4b2b2;
+    font-size: 17px;
+    /*font-family: 'Poppins-Regular';*/
+    margin-top: 25px;
+}
+
+section.signIn .signInForm .signUpFace, section.signIn .signUpForm .signUpFace, section.signUp .signInForm .signUpFace, section.signUp .signUpForm .signUpFace {
+    margin-top: 55px;
+    text-align: center;
+    margin-bottom: 264px;
+}
+
+section.signIn .signInForm .signUpFace p, section.signIn .signUpForm .signUpFace p, section.signUp .signInForm .signUpFace p, section.signUp .signUpForm .signUpFace p {
+    text-align: center;
+    padding: unset;
+    font-size: 20px;
+    /*font-family: 'Poppins-Regular';*/
+    position: relative;
+    margin-bottom: 40px;
+    color: #b4b2b2;
+}
+
+section.signIn .signInForm .signUpFace p:after, section.signIn .signInForm .signUpFace p:before, section.signIn .signUpForm .signUpFace p:after, section.signIn .signUpForm .signUpFace p:before, section.signUp .signInForm .signUpFace p:after, section.signUp .signInForm .signUpFace p:before, section.signUp .signUpForm .signUpFace p:after, section.signUp .signUpForm .signUpFace p:before {
+    position: absolute;
+    width: 20%;
+    content: '';
+    display: block;
+    top: 14px;
+    height: 1px;
+    background-color: #b4b2b2;
+}
+
+section.signIn .signInForm .signUpFace p:after, section.signIn .signUpForm .signUpFace p:after, section.signUp .signInForm .signUpFace p:after, section.signUp .signUpForm .signUpFace p:after {
+    left: 70px;
+}
+
+section.signIn .signInForm .signUpFace p:before, section.signIn .signUpForm .signUpFace p:before, section.signUp .signInForm .signUpFace p:before, section.signUp .signUpForm .signUpFace p:before {
+    right: 70px;
+}
+
+.large_image img {
+    width: 63%;
+}
+
+section.signIn .signInForm .signUpFace .loginWithOtherWay, section.signIn .signUpForm .signUpFace .loginWithOtherWay, section.signUp .signInForm .signUpFace .loginWithOtherWay, section.signUp .signUpForm .signUpFace .loginWithOtherWay {
+    display: flex;
+    flex-direction: row;
+}
+
+section.signIn .signInForm .signUpFace .loginWithOtherWay a, section.signIn .signUpForm .signUpFace .loginWithOtherWay a, section.signUp .signInForm .signUpFace .loginWithOtherWay a, section.signUp .signUpForm .signUpFace .loginWithOtherWay a {
+    width: 163px;
+    height: 55.4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #fff;
+    /*font-family: 'Poppins-Regular';*/
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 12px;
+    color: black;
+    text-decoration: none;
+}
+
+
+section.signIn .signInForm .signUpFace .loginWithOtherWay a svg, section.signIn .signUpForm .signUpFace .loginWithOtherWay a svg, section.signUp .signInForm .signUpFace .loginWithOtherWay a svg, section.signUp .signUpForm .signUpFace .loginWithOtherWay a svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+section.signIn .signInForm .signUpFace .loginWithOtherWay a svg path#twitter_1_, section.signIn .signUpForm .signUpFace .loginWithOtherWay a svg path#twitter_1_, section.signUp .signInForm .signUpFace .loginWithOtherWay a svg path#twitter_1_, section.signUp .signUpForm .signUpFace .loginWithOtherWay a svg path#twitter_1_ {
+    fill: #03A9F4;
+}
+
+section.signIn .signUpForm p, section.signUp .signUpForm p {
+    padding-bottom: 46px;
+}
+
+section.signIn .signUpForm form .mainRegInput, section.signUp .signUpForm form .mainRegInput {
+    margin-bottom: 27px !important;
+}
+
+section.signIn .signUpForm .login, section.signUp .signUpForm .login {
+    margin-bottom: 172px;
+}
+
+section.signIn .postaJob div p, section.signUp .postaJob div p {
+    font-size: 16px;
+    /*font-family: 'Poppins-Regular';*/
+    color: #35AC7C;
+}
+
+section.signIn .postaJob div form label, section.signIn .postaJob div form p, section.signUp .postaJob div form label, section.signUp .postaJob div form p {
+    /*font-family: 'Poppins-Regular';*/
+    font-size: 22px;
+    color: #35AC7C;
+}
+
+section.signIn .postaJob div form input, section.signIn .postaJob div form textarea, section.signIn .postaJob div form select, section.signUp .postaJob div form input, section.signUp .postaJob div form textarea, section.signUp .postaJob div form select {
+    border-radius: unset;
+    border: unset;
+    padding: 17px 19px 16px 19px;
+    background-color: #f1f1f1;
+    font-size: 17px;
+    /*font-family: 'Poppins-Light';*/
+    color: #35AC7C;
+}
+
+section.signIn .postaJob div form input::-webkit-input-placeholder, section.signIn .postaJob div form textarea::-webkit-input-placeholder, section.signIn .postaJob div form select::-webkit-input-placeholder, section.signUp .postaJob div form input::-webkit-input-placeholder, section.signUp .postaJob div form textarea::-webkit-input-placeholder, section.signUp .postaJob div form select::-webkit-input-placeholder {
+    font-size: 17px;
+    /*font-family: 'Poppins-Light';*/
+    color: #35AC7C;
+}
+
+section.signIn .postaJob div form select, section.signUp .postaJob div form select {
+    height: unset !important;
+}
+
+section.signIn .postaJob div form input[value="fixed"]:checked ~ #fixed, section.signUp .postaJob div form input[value="fixed"]:checked ~ #fixed {
+    display: block;
+}
+
+section.signIn .postaJob div form input[value="hour"]:checked ~ #hourly, section.signUp .postaJob div form input[value="hour"]:checked ~ #hourly {
+    display: block;
+}
+
+section.signIn .postaJob div form #fixed, section.signIn .postaJob div form #hourly, section.signUp .postaJob div form #fixed, section.signUp .postaJob div form #hourly {
+    margin: 20px 0;
+    display: none;
+}
+
+section.signIn .postaJob div form .fixedHourly, section.signUp .postaJob div form .fixedHourly {
+    display: block;
+    margin-bottom: 15px;
+}
+
+section.signIn .postaJob div .postMyJob, section.signUp .postaJob div .postMyJob {
+    /*font-family: 'Poppins-Bold';*/
+    font-size: 20px;
+    color: white;
+    background-color: #35AC7C;
+    padding: 17px 33px;
+    border: unset;
+    box-shadow: unset;
+    border-radius: unset;
+    margin-top: 74px;
+    margin-bottom: 156px;
+}
+
+.row {
+    margin: unset;
+}
+
+.alert-warning ,.alert-danger {
+    font-family: sans-serif;
+}
+
+.rtvModal-error{
+    font-size: 80%;
+    color: #f44336;
+}
+
+.requirements {
+    font-family: sans-serif;
+}
+
+
+
+/*#main-navigation li > a {*/
+    /*text-transform: capitalize;*/
+    /*color: #333;*/
+    /*transition: background-color 0.2s, color 0.2s;*/
+/*}*/
+
+/*#main-navigation li > a:hover, #main-navigation li > a:focus {*/
+    /*background-color: #333;*/
+    /*color: #fff;*/
+/*}*/
+
+/*#main-navigation li.active > a {*/
+    /*background-color: #fff;*/
+    /*color: #fff;*/
+/*}*/
