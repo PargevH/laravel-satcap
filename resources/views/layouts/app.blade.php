@@ -462,44 +462,44 @@
 
                 <nav id="main-navigation" style="float:right" data-content-field="navigation-mainNav">
                     <ul>
-                        <li class="active">
+                        <li class="treeview {{ Request::is('index') ? 'navActive' : '' }}">
                             <a href="{{route('index')}}">
                                 <font size="2px">ABOUT</font>
                             </a>
                         </li>
                         |
-                        <li class="l">
+                        <li class="treeview {{ Request::is('team') ? 'navActive' : '' }}">
                             <a href="{{route('team')}}">
                                 <font size="2px">TEAM</font>
                             </a>
                         </li>
                         |
-                        <li class="l">
+                        <li class="treeview {{ Request::is('portfolio') ? 'navActive' : '' }}">
                             <a href="{{route('portfolio')}}">
                                 <font size="2px">PORTFOLIO</font>
                             </a>
                         </li>
                         |
-                        <li class="l">
+                        <li class="treeview {{ Request::is('contactUs') ? 'navActive' : '' }}">
                             <a href="{{route('contactUs')}}">
                                 <font size="2px">CONTACT</font>
                             </a>
                         </li>
                         |
                         @guest
-                            <li class="l">
+                            <li class="treeview {{ Request::is('login') ? 'navActive' : '' }}">
                                 <a href="{{route('login')}}">
                                     <font size="2px">SING IN</font>
                                 </a>
                             </li>
                             |
-                            <li class="l">
+                            <li class="treeview {{ Request::is('register') ? 'navActive' : '' }}">
                                 <a href="{{route('register')}}">
                                     <font size="2px">SING UP</font>
                                 </a>
                             </li>
                         @else
-                            <li class="l">
+                            <li class="treeview {{ Request::is('logout') ? 'navActive' : '' }}">
                                 <a href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

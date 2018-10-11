@@ -24,7 +24,6 @@
                 </p>
             </font>
             <br>
-            @guest
                 <div class="contactForm">
 
                 <div class="row">
@@ -172,7 +171,6 @@
                 </div>
 
             </div>
-            @endguest
             <!--SITE contact info-->
             <div class="contact-info">
                 <p class="site-location">

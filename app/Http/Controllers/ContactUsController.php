@@ -11,12 +11,12 @@ class ContactUSController extends Controller
 {
     public function contactUS()
     {
-        return view('contactUS');
+        return view('contactUs');
     }
     /** * Show the application dashboard. * * @return \Illuminate\Http\Response */
     public function contactUSPost(Request $request)
     {
-        $this->validate($request, [ 'firstName' => 'required', 'lastName' => 'required', 'email' => 'required|email', 'phone' => 'required|digits:10', 'companyName' => 'nullable|string','accredited' => 'nullable', 'message' => 'required' ]);
+        $this->validate($request, [ 'firstName' => 'required', 'lastName' => 'required', 'email' => 'required|email', 'phone' => 'required|digits:10', 'companyName' => 'nullable|string', 'accredited' => 'nullable', 'message' => 'required' ]);
         ContactUS::create($request->all());
 
         Mail::send('email',
@@ -31,7 +31,7 @@ class ContactUSController extends Controller
             ), function($message) use ($request)
             {
                 $message->from( $request->get('email'));
-                $message->to('admin@gmail.com', 'Admin')->subject('Cloudways Feedback');
+                $message->to('admin@satoshicapital.io', 'Admin')->subject('Cloudways Feedback Capital');
             });
 
         return back()->with('success', 'Thanks for contacting us!');

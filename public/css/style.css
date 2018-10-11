@@ -308,8 +308,20 @@ section.signIn .postaJob div .postMyJob, section.signUp .postaJob div .postMyJob
     font-family: sans-serif;
 }
 
+#main-navigation .navActive a {
+    color: #e7bd74 !important;
+}
 
-
+.input001 {
+    height: 40px;
+    display: block;
+    width: 100%;
+    background: transparent;
+    font-size: 18px;
+    color: #555555;
+    line-height: 1.2;
+    padding-right: 15px;
+}
 /*#main-navigation li > a {*/
     /*text-transform: capitalize;*/
     /*color: #333;*/

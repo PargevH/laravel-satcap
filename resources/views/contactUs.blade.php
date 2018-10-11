@@ -75,7 +75,7 @@
 
 						<div class="wrap-input100 validate-input bg1">
 							<span class="label-input100">Company NAME</span>
-							<input class="input100" type="text" name="companyName" placeholder="Enter Your Company Name">
+							<input class="input001" type="text" name="companyName" placeholder="Enter Your Company Name">
 						</div>
 
 						<div class="wrap-input100 input100-select bg1">
