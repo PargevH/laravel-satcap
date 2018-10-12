@@ -489,13 +489,13 @@
                         @guest
                             <li class="treeview {{ Request::is('login') ? 'navActive' : '' }}">
                                 <a href="{{route('login')}}">
-                                    <font size="2px">SING IN</font>
+                                    <font size="2px">SIGN IN</font>
                                 </a>
                             </li>
                             |
                             <li class="treeview {{ Request::is('register') ? 'navActive' : '' }}">
                                 <a href="{{route('register')}}">
-                                    <font size="2px">SING UP</font>
+                                    <font size="2px">SIGN UP</font>
                                 </a>
                             </li>
                         @else
