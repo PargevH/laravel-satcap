@@ -17,4 +17,7 @@ Route::group([
     });
     $router->get('users', 'UserController@index')->name('users');
 
+    $router->get('/users/{id}/edit', 'UserController@edit')->name('edit');
+    $router->get('/users/create', 'UserController@create')->name('create');
+    $router->get('users/{id}', 'UserController@detail')->name('detail');
 });

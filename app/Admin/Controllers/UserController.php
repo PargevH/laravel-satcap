@@ -82,6 +82,12 @@ class UserController extends Controller
         $grid = new Grid(new User());
 
         $grid->id('ID')->sortable();
+        $grid->firstName('First Name');
+        $grid->lastName('Last Name');
+        $grid->email('email');
+        $grid->email_verified_at('email_verified_at');
+        $grid->phone('phone');
+        $grid->company('company');
         $grid->created_at('Created at');
         $grid->updated_at('Updated at');
 
@@ -96,9 +102,15 @@ class UserController extends Controller
      */
     protected function detail($id)
     {
-        $show = new Show(User()::findOrFail($id));
+        $show = new Show(User::findOrFail($id));
 
         $show->id('ID');
+        $show->firstName('First Name');
+        $show->lastName('Last Name');
+        $show->email('email');
+        $show->email_verified_at('email_verified_at');
+        $show->phone('phone');
+        $show->company('company');
         $show->created_at('Created at');
         $show->updated_at('Updated at');
 
@@ -115,6 +127,12 @@ class UserController extends Controller
         $form = new Form(new User());
 
         $form->display('id', 'ID');
+        $form->text('firstName','First Name')->rules('required');
+        $form->text('lastName','Last Name')->rules('required');
+        $form->email('email')->rules('required');
+        $form->display('email_verified_at','Email Verified At');
+        $form->number('phone')->rules('required');
+        $form->text('company')->rules('nullable');
         $form->display('created_at', 'Created At');
         $form->display('updated_at', 'Updated At');
 
