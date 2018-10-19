@@ -33,7 +33,7 @@
         </li>
         <li class="treeview">
             <a href="{{route('users')}}">
-                <i class="fa fa-align-center }}"></i>
+                <i class="fa fa-align-center"></i>
                 <span>Users</span>
             </a>
             {{--<a href="{{route('users')}}">--}}

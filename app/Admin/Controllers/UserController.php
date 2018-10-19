@@ -90,7 +90,7 @@ class UserController extends Controller
         $grid->company('company');
         $grid->created_at('Created at');
         $grid->updated_at('Updated at');
-
+        $grid->disableCreateButton();
         return $grid;
     }
 
