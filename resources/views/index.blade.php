@@ -24,21 +24,30 @@
                 </p>
             </font>
             <br>
-                <div class="contactForm">
-
+            <div class="contactForm">
                 <div class="row">
-                    <div class="offset-md-4 col-md-4 col-centered">
-                        Sign up for updates<br>
-                    </div>
+                    @guest
+                        <div class="offset-md-4 col-md-4 col-centered">
+                            Sign up for updates<br>
+                        </div>
+                    @endguest
                 </div>
                 <div class="row">
                     <div class="offset-md-4 col-md-4 col-centered">
-                        <form id="#form" action="https://send.pageclip.co/tr2XqUyAOCsFPK8XiFKb1znLeAavR7Z6" class="pageclip-form" method="post">
-                            <input type="text" name="email" value="" class="form-control" id="newsletter_input"/>
+                    @guest
+                        <form id="#form" action="{{ route('index') }}" class="pageclip-form" method="post">
+                            @csrf
+
+                            <input type="text" name="email" value="" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" id="newsletter_input" required/>
+                            @if ($errors->has('email'))
+                                <span class="invalid-feedback" role="alert">
+                                {{ $errors->first('email') }}
+                            </span>
+                            @endif
                             <label id="newsletter_label" for="newsletter_input">email address</label>
                             <button id="newsletter_button" type="submit" class="pageclip-form__submit">Sign up</button>
                         </form>
-
+                    @endguest
                         <style media="screen">
                             .col-centered{
                                 float: none;
@@ -140,33 +149,33 @@
                                 opacity: 1;
                             }
                         </style>
-                        <script type="text/javascript">
+                            <script type="text/javascript">
 
-                            var email = document.getElementById('newsletter_input'),
-                                button = document.getElementById('newsletter_button');
+                                var email = document.getElementById('newsletter_input'),
+                                    button = document.getElementById('newsletter_button');
 
-                            function validateEmail(email) {
-                                var ex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-                                return ex.test(email);
-                            }
-
-                            email.addEventListener('keydown', function() {
-                                var email = this.value;
-
-                                if(validateEmail(email)) {
-                                    button.classList.add('is-active');
+                                function validateEmail(email) {
+                                    var ex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                                    return ex.test(email);
                                 }
-                            });
 
-                            button.addEventListener('click', function(e){
-                                this.classList.add('is-done','is-active');
+                                email.addEventListener('keydown', function() {
+                                    var email = this.value;
 
-                                setTimeout(function(){
-                                    button.innerHTML = "Check Your Email."
-                                }, 500);
-                            });
+                                    if(validateEmail(email)) {
+                                        button.classList.add('is-active');
+                                    }
+                                });
 
-                        </script>
+                                button.addEventListener('click', function(e){
+                                    this.classList.add('is-done','is-active');
+
+                                    setTimeout(function(){
+                                        button.innerHTML = "Check Your Email."
+                                    }, 500);
+                                });
+
+                            </script>
                     </div>
                 </div>
 

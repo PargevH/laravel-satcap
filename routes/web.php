@@ -15,7 +15,9 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::view('index', 'index')->name('index');
+Route::get('index', 'SubscribeController@index')->name('index');
+
+Route::post('index', 'SubscribeController@subscribe')->name('index');
 
 Route::view('team', 'team')->name('team');
 

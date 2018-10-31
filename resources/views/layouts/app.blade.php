@@ -23,7 +23,7 @@
     <!-- Satoshi Capital -->
     <meta charset="utf-8"/>
     <title>Satoshi Capital</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}"/>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('images/home1.png') }}"/>
     <meta property="og:site_name" content="Satoshi Capital"/>
     <meta property="og:title" content="Satoshi Capital"/>
     <meta property="og:type" content="website"/>

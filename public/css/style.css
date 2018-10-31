@@ -322,6 +322,15 @@ section.signIn .postaJob div .postMyJob, section.signUp .postaJob div .postMyJob
     line-height: 1.2;
     padding-right: 15px;
 }
+
+.main-content-wrapper h2, .main-content-wrapper p font, #main-navigation ul li a {
+    color: #d6d5d5 !important;
+}
+
+#innerWrapper p,#innerWrapper h2 {
+    color: #d6d5d5 !important;
+}
+
 /*#main-navigation li > a {*/
     /*text-transform: capitalize;*/
     /*color: #333;*/

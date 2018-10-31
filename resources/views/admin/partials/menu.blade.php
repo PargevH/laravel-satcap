@@ -36,9 +36,12 @@
                 <i class="fa fa-align-center"></i>
                 <span>Users</span>
             </a>
-            {{--<a href="{{route('users')}}">--}}
-                {{--<i class="fa fa-align-center"></i>Users--}}
-            {{--</a>--}}
+        </li>
+        <li class="treeview">
+            <a href="{{route('messages')}}">
+                <i class="fa fa-paper-plane"></i>
+                <span>Messages</span>
+            </a>
         </li>
     @endif
 @endif

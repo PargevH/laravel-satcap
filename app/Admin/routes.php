@@ -52,4 +52,10 @@ Route::group([
     $router->resource('users', 'UserController', ['only' => ['update', 'destroy']]);
 
     $router->get('users/{id}', 'UserController@show')->name('show');
+
+    $router->get('messages', 'MessagesController@index')->name('messages');
+    $router->get('/messages/{id}/edit', 'MessagesController@edit')->name('edit');
+    $router->get('/messages/create', 'MessagesController@create')->name('create');
+    $router->resource('messages', 'MessagesController', ['only' => ['update', 'store', 'destroy']]);
+    $router->get('messages/{id}', 'MessagesController@show')->name('show');
 });
